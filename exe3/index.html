@@ -20,10 +20,10 @@
         <div class="view-detail">
             <div class="transparent" onclick="hideViewDetail()"></div>
             <div class="issue">
-                <div class="issue-content">
+                <form name="issueForm" class="issue-content">
                     <div class="left">
                         <div class="wrap-left">
-                            <input type="text" id="title" />
+                            <input type="text" name="title" id="title" />
                             <div class="status-bar">
                                 <div class="form-control type">
                                     <label for="type">Type:</label>
@@ -45,34 +45,47 @@
                                 </div>
                                 <div class="form-control priority">
                                     <label for="priority">Priority:</label>
-                                    <select name="priority" id="priority">
-                                        <option value="highest">Highest</option>
-                                        <option value="high">High</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="low">Low</option>
-                                    </select>
+                                    <input type="radio" id="priorityhighest" name="priority" value="highest" />
+                                    <label for="priorityhighest">Highest</label>
+                                    <input type="radio" id="priorityhigh" name="priority" value="high" />
+                                    <label for="priorityhigh">High</label>
+                                    <input type="radio" id="prioritymedium" name="priority" value="medium" />
+                                    <label for="prioritymedium">Medium</label>
+                                    <input type="radio" id="prioritylow" name="priority" value="low" />
+                                    <label for="prioritylow">Low</label>
+                                </div>
+                                <div class="form-control allowFor">
+                                    <label for="allowFor">Issue allow for:</label><br/>
+                                    <input type="checkbox" id="back_end" name="allowFor" value="back_end" />
+                                    <label for="back_end">Back-end</label><br/>
+                                    <input type="checkbox" id="front_end" name="allowFor" value="front_end" />
+                                    <label for="front_end">Front-end</label><br/>
+                                    <input type="checkbox" id="function_test" name="allowFor" value="function_test" />
+                                    <label for="function_test">Function tester</label><br/>
+                                    <input type="checkbox" id="performance_test" name="allowFor" value="performance_test" />
+                                    <label for="performance_test">Performance tester</label>
                                 </div>
                             </div>
                             <div class="description">
                                 <label for="description">Description:</label>
-                                <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                                <textarea name="description" id="description" cols="30" rows="5"></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="right">
                         <div class="form-control created-by">
                             <label for="createdBy">Created by:</label>
-                            <input type="text" id="createdBy"/>
+                            <input type="text" name="createdBy" id="createdBy"/>
                         </div>
                         <div class="form-control assignee">
                             <label for="assignee">Assignee:</label>
-                            <input type="text" id="assignee" />
+                            <input type="text" name="assignee" id="assignee" />
                         </div>
                         <div class="form-control estimate">
                             <label for="estimate">Estimate:</label>
-                            <input type="text" id="estimate" />
+                            <input type="text" name="estimate" id="estimate" />
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="issue-action">
                     <button class="save" onclick="saveIssue()">Save</button>
