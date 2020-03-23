@@ -17,6 +17,19 @@ pre {
     margin-bottom: 20px;
 }
 
+.btnUpdate {
+    padding: 10px 15px;
+    background: #16e016;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btnUpdate:hover {
+    background: #02c702;
+}
+
 #root {
     width: 1000px;
     margin: 0 auto;
