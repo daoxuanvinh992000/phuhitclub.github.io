@@ -1,0 +1,192 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: relative;
+    background: #efefef;
+}
+
+pre {
+    margin-bottom: 20px;
+}
+
+#root {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.wrap-issue {
+    height: 80px;
+    width: 280px;
+    background: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.wrap-issue > .title {
+    margin-bottom: 10px;
+}
+
+.pre-info .priority {
+    float: left;
+}
+
+.priority.highest {
+    color: red;
+    font-weight: bold;
+}
+
+.pre-info .estimate {
+    float: right;
+}
+
+/**************************/
+.view-detail {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.view-detail .transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+}
+
+.issue {
+    width: 640px;
+    height: 400px;
+    margin-top: 100px;
+    z-index: 999;
+    position: relative;
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.issue-content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+}
+
+.issue-content .left {
+    flex: 1;
+}
+
+.issue-content .form-control {
+    padding: 10px 0;
+}
+
+#title {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    background: #f3e9e9;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.issue-content .status-bar {
+    margin: 10px 0;
+}
+
+.issue-content .status-bar .form-control {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.issue-content .status-bar .form-control label {
+    margin-right: 5px;
+}
+
+.issue-content .status-bar .form-control select {
+    width: 100px;
+}
+
+.issue-content .description {
+    margin-top: 20px;
+}
+
+.issue-content .description label {
+    vertical-align: top;
+}
+
+.issue-content .description textarea {
+    width: 100%;
+    resize: none;
+}
+
+.issue-content .right {
+    width: 150px;
+    margin-left: 15px;
+}
+
+.issue-content .right label{
+    display: block;
+    font-weight: bold;
+}
+
+.issue-content .right input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.issue-action {
+    height: 30px;
+    margin-top: 15px;
+    width: 100%;
+    text-align: right;
+}
+
+.issue-action button {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all linear .1s;
+}
+
+.save {
+    background: #4da9ea;
+    color: #fff;
+}
+
+.save:hover {
+    background: #4d6fea;
+}
+
+.close:hover {
+    background: #aaa;
+}
+
+.issue-action button:focus {
+    border: none;
+}
