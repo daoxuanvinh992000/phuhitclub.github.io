@@ -1,0 +1,38 @@
+.chatbox {
+  height: 80vh;
+  width: 60%;
+  margin-left: 20%;
+  border: 1px solid black;
+  position: relative;
+  border-radius: 5px;
+}
+.form {
+  position: absolute;
+  bottom: 10;
+  width: 100%;
+}
+.ip {
+  width: 80%;
+  height: 20px;
+  margin: 0 5%;
+}
+button {
+  background-color: blueviolet;
+  color: white;
+  padding: 8px;
+  border: 0;
+  border-radius: 10px;
+}
+.message {
+  background-color: rgb(27, 105, 223);
+  color: white;
+  padding: 10px;
+  width: 20%;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
